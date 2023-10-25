@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.example.countrymanagement.databinding.ActivityMainBinding;
+import com.example.countrymanagement.fragments.ExchangeHistoricFragment;
+import com.example.countrymanagement.fragments.HomeFragment;
+import com.example.countrymanagement.fragments.NewExchangeFragment;
 
 import java.util.HashMap;
 
@@ -33,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void fillHashMap(){
         kv.put(R.id.navigation_home, new HomeFragment());
-        kv.put(R.id.navigation_profile, new ProfileFragment());
-        kv.put(R.id.navigation_settings, new SettingsFragment());
+        kv.put(R.id.navigation_historic_exchange, new ExchangeHistoricFragment());
+        kv.put(R.id.navigation_new_exchange, new NewExchangeFragment());
     }
 
     private void replaceFragment(Fragment fragment){
